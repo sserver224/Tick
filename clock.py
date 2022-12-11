@@ -86,7 +86,7 @@ try:
     if QueryValueEx(OpenKey(OpenKey(OpenKey(HKEY_CURRENT_USER, 'Software', reserved=0, access=KEY_ALL_ACCESS), 'sserver', reserved=0, access=KEY_ALL_ACCESS), 'Tick', reserved=0, access=KEY_ALL_ACCESS), 'Notify')[0]==1:
         clock.notify=True
     else:
-        clock.notify=True
+        clock.notify=False
 except:
     clock.notify=False
     readFailed=True
